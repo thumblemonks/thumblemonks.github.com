@@ -88,3 +88,6 @@ p {
     width: 40%; }
     #content #columns .sidebar img {
       margin: 1ex .5ex 1ex .5ex; }
+
+#ribbon {
+  position: absolute; top: 0; right: 0; border: 0; }
