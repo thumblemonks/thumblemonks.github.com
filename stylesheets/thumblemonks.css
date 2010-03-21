@@ -1,0 +1,29 @@
+body { background-color: #fff9d8; }
+
+/* Round things */
+.round { -moz-border-radius: 1ex; -webkit-border-radius: 1ex; }
+.roundleft {
+  -moz-border-radius-topleft: 1ex; -webkit-border-top-left-radius: 1ex;
+  -moz-border-radius-bottomleft: 1ex; -webkit-border-bottom-left-radius: 1ex;
+}
+.roundright {
+  -moz-border-radius-topright: 1ex; -webkit-border-top-right-radius: 1ex;
+  -moz-border-radius-bottomright: 1ex; -webkit-border-bottom-right-radius: 1ex;
+}
+
+/* Main column */
+#root .main { color: white; background-color: #231f20; }
+#root .inside { padding: 1em; }
+
+/* Banners */
+#root .banner {
+  background-color: #007200; border: 1px solid #4d9d4d; padding: 1ex;
+  position: relative; float: left; width: auto; left: -1em; top: -1ex;
+}
+#root .banner h2 { margin: 0; padding: 0;}
+
+/* Intro and proof */
+#root #proof { padding: 1em 0;}
+
+/* Footer */
+#root #footer { padding: 1ex; text-align: center; font-size: 90%; }
