@@ -1,6 +1,6 @@
 /*
  * Dark Brown: #231f20
- * Creamy Brown: #fff9d8
+ * Creamy Brown: #ffffe0
  * Green: #007200
  * Light Green: #4d9d4d
  * Light Purple: #aa81a3
@@ -16,6 +16,10 @@ body { }
 }
 .roundright {
   -moz-border-radius-topright: 1ex; -webkit-border-top-right-radius: 1ex;
+  -moz-border-radius-bottomright: 1ex; -webkit-border-bottom-right-radius: 1ex;
+}
+.roundbottom {
+  -moz-border-radius-bottomleft: 1ex; -webkit-border-bottom-left-radius: 1ex;
   -moz-border-radius-bottomright: 1ex; -webkit-border-bottom-right-radius: 1ex;
 }
 
@@ -40,13 +44,18 @@ body { }
 #root #collective #buzz { }
 #root #collective #buzz ul { list-style-type: none; }
 #root #collective #buzz li {
-  text-align: right;
+  text-align: right; cursor: pointer;
   padding: 1ex 0; margin: 0; border-bottom: 1px dotted #ddd;
   font-family: Georgia, serif; font-style: italic; font-size: 115%; color: #555;
 }
-#root #collective #buzz li:hover { cursor: pointer; color: #4d9d4d; }
+#root #collective #buzz li.selected { color: #4d9d4d; background-color: #ffffe0; }
 #root #collective #buzz li:last-child { border-bottom: 0; }
 #root #collective #buzz li .more { font-style: normal; color: #ccc; }
+
+#root #collective #buzz_bits .bit {
+  text-align: justify;
+  background-color: #ffffe0; padding: 1em;
+}
 
 /* Who */
 #root #who .inside {

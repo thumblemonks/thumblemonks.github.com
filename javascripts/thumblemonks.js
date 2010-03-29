@@ -9,6 +9,19 @@
 })(jQuery);
 
 $(document).ready(function() {
+  $("#buzz li").hover(
+    function() {
+      var buzz = $(this);
+      buzz.addClass("selected");
+      $("#buzz_bits .bit[data-buzz=" + buzz.attr("data-buzz") + "]").show();
+    },
+    function() {
+      var buzz = $(this);
+      buzz.removeClass("selected");
+      $("#buzz_bits .bit[data-buzz=" + buzz.attr("data-buzz") + "]").hide();
+    }
+  );
+
   $("#who ul").randomize("li");
   
   $("#who li").click(function() {
