@@ -48,8 +48,26 @@ body { }
 #root #collective #buzz li:last-child { border-bottom: 0; }
 #root #collective #buzz li .more { font-style: normal; color: #ccc; }
 
+/* Who */
+#root #who .inside {
+  border: 1px solid #ccc;
+}
+
+#root #who ul {
+  list-style-type: none; margin: 0; border-right: 1px solid #ccc;
+}
+#root #who li {
+  padding: 1ex 0 1ex 1em; margin: 0; border-bottom: 1px dotted #ddd;
+  font-family: Georgia, serif; font-style: italic; color: #555;
+}
+#root #who li:last-child { border-bottom: 0; }
+#root #who li:hover { cursor: pointer; color: #4d9d4d; }
+#root #who li.selected { color: #4d9d4d; }
+
+#root #who .bio { padding: 1em; }
+
 /* Intro and proof */
-#root #intro ul { list-style-type: none; border-bottom: 1px solid #aaa;}
+/*#root #intro ul { list-style-type: none; border-bottom: 1px solid #aaa;}
 #root #intro li {
   padding: 1ex 0; margin: 0; border-top: 1px solid #aaa;
 }
@@ -58,6 +76,6 @@ body { }
   font-weight: bold;
 }
 #root #proof { }
-
+*/
 /* Footer */
 #root #footer { padding: 1ex; text-align: center; font-size: 90%; }
