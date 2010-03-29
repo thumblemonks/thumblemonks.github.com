@@ -1,7 +1,15 @@
-body { background-color: #fff9d8; }
+/*
+ * Dark Brown: #231f20
+ * Creamy Brown: #fff9d8
+ * Green: #007200
+ * Light Green: #4d9d4d
+ * Light Purple: #aa81a3
+ */
+
+body { }
 
 /* Round things */
-.round { -moz-border-radius: 1ex; -webkit-border-radius: 1ex; }
+.round { -moz-border-radius: 1ex; -webkit-border-radius: 1ex; border-radius: 1ex; }
 .roundleft {
   -moz-border-radius-topleft: 1ex; -webkit-border-top-left-radius: 1ex;
   -moz-border-radius-bottomleft: 1ex; -webkit-border-bottom-left-radius: 1ex;
@@ -12,18 +20,44 @@ body { background-color: #fff9d8; }
 }
 
 /* Main column */
-#root .main { color: white; background-color: #231f20; }
-#root .inside { padding: 1em; }
+#root .main { }
+#root .main h2 { font-size: 12pt; text-transform: uppercase; color: #777; padding: 0; margin: 0; }
+#root .inside { }
 
-/* Banners */
-#root .banner {
-  background-color: #007200; border: 1px solid #4d9d4d; padding: 1ex;
-  position: relative; float: left; width: auto; left: -1em; top: -1ex;
+/* Header */
+#root #header {}
+#root #header #logo { padding: 1em 0; }
+#root #header #slogan {
+  padding: 0.75em; margin: 0 0 1em 0; background-color: #ddd; border: 1px solid #ddd;
+  border-color: rgba(220, 220, 220, 0.35) rgba(100, 100, 100, 0.25) rgba(100, 100, 100, 0.25) rgba(220, 220, 220, 0.35);
+  color: #333; font-weight: bold; text-shadow: 1px 1px 2px #fff;
 }
-#root .banner h2 { margin: 0; padding: 0;}
+
+/* Collective */
+#root #collective p { text-align: justify; }
+#root #collective p.notice { font-size: 150%; font-weight: bold; }
+
+#root #collective #buzz { }
+#root #collective #buzz ul { list-style-type: none; }
+#root #collective #buzz li {
+  text-align: right;
+  padding: 1ex 0; margin: 0; border-bottom: 1px dotted #ddd;
+  font-family: Georgia, serif; font-style: italic; font-size: 115%; color: #555;
+}
+#root #collective #buzz li:hover { cursor: pointer; color: #4d9d4d; }
+#root #collective #buzz li:last-child { border-bottom: 0; }
+#root #collective #buzz li .more { font-style: normal; color: #ccc; }
 
 /* Intro and proof */
-#root #proof { padding: 1em 0;}
+#root #intro ul { list-style-type: none; border-bottom: 1px solid #aaa;}
+#root #intro li {
+  padding: 1ex 0; margin: 0; border-top: 1px solid #aaa;
+}
+#root #intro li .response {
+  margin-left: 1em; padding: 0.5ex 0; color: #aa81a3;
+  font-weight: bold;
+}
+#root #proof { }
 
 /* Footer */
 #root #footer { padding: 1ex; text-align: center; font-size: 90%; }
