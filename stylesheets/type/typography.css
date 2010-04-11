@@ -1,0 +1,22 @@
+/* Museo 300 */
+
+@font-face {
+  font-family: 'Museo300';
+  src: url('museo300regular.eot');
+}
+
+@font-face {
+  font-family: 'Museo300';
+  src: url(//:) format('no404'), url('museo300regular.woff') format('woff'), url('museo300regular.ttf') format('truetype');
+}
+
+/* Museo 700 */
+@font-face {
+  font-family: 'Museo700';
+  src: url('museo700regular.eot');
+}
+
+@font-face {
+  font-family: 'Museo700';
+  src: url(//:) format('no404'), url('museo700regular.woff') format('woff'), url('museo700regular.ttf') format('truetype');
+}
