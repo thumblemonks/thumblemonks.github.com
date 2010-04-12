@@ -62,7 +62,7 @@ body { }
 #root #collective #buzz li .more { font-style: normal; color: #ccc; }
 
 #root #collective #buzz_bits .bit {
-  text-align: justify;
+  text-align: left;
   background-color: #ffffe0; padding: 1em;
 }
 
