@@ -8,12 +8,16 @@
 
 body { }
 
+a, a:visited { color: #4d9d4d; }
+a:hover { background-color: #adddad; color: #fff; text-decoration: none; }
+
 /* Colors */
 .darkbrown { color: #231f20; }
 .lightpurple { color: #aa81a3; }
 .purple { color: #7a4173; }
+.green { color: #4d9d4d;}
 
-/* Padding, Borders, Alinbment */
+/* Padding, Borders, Alignment */
 .nopad { padding: 0; margin: 0; }
 .justify { text-align: justify; }
 
