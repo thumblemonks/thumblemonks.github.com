@@ -41,6 +41,9 @@ body { }
 #root .main h3 {
   font-size: 10pt; color: #333; text-transform: uppercase; padding: 1ex 0; margin: 1em 0;
 }
+#root .main h4 {
+  font-size: 12pt; color: #333; padding: 0 0 1ex 0; margin: 0;
+}
 #root .inside { }
 
 /* Header */
@@ -128,6 +131,13 @@ body { }
 }
 #root #projects li:hover { cursor: pointer; color: #4d9d4d; }
 #root #projects li.selected { color: #4d9d4d; }
+
+#root #projects #project_details { margin-top: 1em; }
+#root #projects .project { padding: 1em 0; background-color: #ffffe0; }
+#root #projects .project img {
+  -webkit-box-shadow: 1px 1px 5px #aaa; -moz-box-shadow: 1px 1px 5px #aaa;
+  margin: 0 1em;
+}
 
 /* Footer */
 #root #footer { padding: 1ex; text-align: center; font-size: 90%; }
