@@ -121,6 +121,7 @@ a:hover { background-color: #adddad; color: #fff; text-decoration: none; }
 #root #who .bio p { text-align: justify; }
 #root #who .bio .contact { border-bottom: 1px dotted #ccc; margin-bottom: 1ex; padding-bottom: 1ex;}
 #root #who .bio .contact label { display: inline-block; width: 4em; }
+#root #who .bio .favorite { font-size: 85%; color: #444; font-family: Georgia, serif; font-style: italic; }
 
 /* Clients */
 
