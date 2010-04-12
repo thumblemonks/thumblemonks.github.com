@@ -11,6 +11,10 @@ body { }
 /* Colors */
 .darkbrown { color: #231f20; }
 .lightpurple { color: #aa81a3; }
+.purple { color: #7a4173; }
+
+/* Padding & Borders */
+.nopad { padding: 0; margin: 0; }
 
 /* Round things */
 .round { -moz-border-radius: 1ex; -webkit-border-radius: 1ex; border-radius: 1ex; }
@@ -29,17 +33,23 @@ body { }
 
 /* Main column */
 #root .main { }
-#root .main h2 { font-size: 12pt; text-transform: uppercase; color: #777; padding: 0; margin: 0; }
+#root .main h2 {
+  font-family: "Museo700", Helvetica, Arial, sans-serif; font-size: 14pt;
+  text-transform: uppercase; padding: 1ex 0; margin: 1em 0;
+}
+#root .main h3 {
+  font-size: 10pt; color: #666; text-transform: uppercase; padding: 1ex 0; margin: 1em 0;
+}
 #root .inside { }
 
 /* Header */
 #root #header {}
 #root #header #logo { padding: 1ex 0; }
 #root #header #logo h1 {
-  font-family: "Museo700", Helvetica, Arial, serif; font-size: 29pt; line-height: 1em;
+  font-family: "Museo700", Helvetica, Arial, sans-serif; font-size: 29pt; line-height: 1em;
   padding: 0; margin: 0;
 }
-#root #header #logo #subtitle { font-family: "Museo300", Helvetica, Arial, serif; line-height: 1em; }
+#root #header #logo #subtitle { font-family: "Museo300", Helvetica, Arial, sans-serif; line-height: 1em; }
 #root #header #slogan {
   padding: 0.75em; margin: 0 0 1em 0; background-color: #ddd; border: 1px solid #ddd;
   border-color: rgba(220, 220, 220, 0.35) rgba(100, 100, 100, 0.25) rgba(100, 100, 100, 0.25) rgba(220, 220, 220, 0.35);
@@ -48,7 +58,7 @@ body { }
 
 /* Collective */
 #root #collective p { text-align: justify; }
-#root #collective p.notice { font-size: 180%; font-weight: bold; font-family: "Museo300";}
+#root #collective p.notice { font-size: 180%; font-weight: bold; font-family: "Museo300", Helvetica, Arial, sans-serif;}
 
 #root #collective #buzz { }
 #root #collective #buzz ul { list-style-type: none; }
@@ -101,16 +111,14 @@ body { }
 
 #root #who .bio { padding: 1em; }
 
-/* Intro and proof */
-/*#root #intro ul { list-style-type: none; border-bottom: 1px solid #aaa;}
-#root #intro li {
-  padding: 1ex 0; margin: 0; border-top: 1px solid #aaa;
+/* Clients */
+
+#root #clients ul {
+  list-style-type: none; margin: 0;
 }
-#root #intro li .response {
-  margin-left: 1em; padding: 0.5ex 0; color: #aa81a3;
-  font-weight: bold;
+#root #clients li {
+  padding: 0; margin: 0;
 }
-#root #proof { }
-*/
+
 /* Footer */
 #root #footer { padding: 1ex; text-align: center; font-size: 90%; }
