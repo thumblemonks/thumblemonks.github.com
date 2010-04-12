@@ -79,7 +79,7 @@ a:hover { background-color: #adddad; color: #fff; text-decoration: none; }
 #root #collective #buzz li .more { font-style: normal; color: #ccc; }
 
 #root #collective #buzz_bits .bit {
-  text-align: left;
+  text-align: justify;
   background-color: #ffffe0; padding: 1em;
 }
 #root #collective #buzz_bits .bit ul {
