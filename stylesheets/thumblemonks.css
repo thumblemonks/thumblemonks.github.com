@@ -46,7 +46,7 @@ a:hover { background-color: #adddad; color: #fff; text-decoration: none; }
   font-size: 10pt; color: #333; text-transform: uppercase; padding: 1ex 0; margin: 1em 0;
 }
 #root .main h4 {
-  font-size: 12pt; color: #333; padding: 0 0 1ex 0; margin: 0;
+  font-size: 12pt; color: #333; padding: 0 0 1ex 0; margin: 0; line-height: 1.25ex;
 }
 #root .inside { }
 
@@ -117,6 +117,10 @@ a:hover { background-color: #adddad; color: #fff; text-decoration: none; }
 #root #who li.selected { color: #4d9d4d; }
 
 #root #who .bio { padding: 1em; }
+#root #who .bio img { margin: 0 1em 1em 0; }
+#root #who .bio p { text-align: justify; }
+#root #who .bio .contact { border-bottom: 1px dotted #ccc; margin-bottom: 1ex; padding-bottom: 1ex;}
+#root #who .bio .contact label { display: inline-block; width: 4em; }
 
 /* Clients */
 
