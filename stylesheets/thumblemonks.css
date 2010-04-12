@@ -48,7 +48,7 @@ body { }
 
 /* Collective */
 #root #collective p { text-align: justify; }
-#root #collective p.notice { font-size: 150%; font-weight: bold; }
+#root #collective p.notice { font-size: 180%; font-weight: bold; font-family: "Museo300";}
 
 #root #collective #buzz { }
 #root #collective #buzz ul { list-style-type: none; }
