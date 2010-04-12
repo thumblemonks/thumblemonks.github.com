@@ -65,6 +65,23 @@ body { }
   text-align: left;
   background-color: #ffffe0; padding: 1em;
 }
+#root #collective #buzz_bits .bit ul {
+  list-style-type: none; padding: 0; margin: 1ex 0 0 0;
+}
+#root #collective #buzz_bits .bit li {
+  font-family: Georgia, serif; font-style: italic;
+  margin: 0; color: #666; list-style: circle inside;
+}
+
+  #root #collective #buzz_bits .bit[data-buzz=app] { }
+  #root #collective #buzz_bits .bit[data-buzz=kickstart] { }
+  #root #collective #buzz_bits .bit[data-buzz=agile] { }
+  #root #collective #buzz_bits .bit[data-buzz=ixd] { margin-top: 1em; }
+  #root #collective #buzz_bits .bit[data-buzz=print] { margin-top: 2em; }
+  #root #collective #buzz_bits .bit[data-buzz=security] { margin-top: 5em; }
+  #root #collective #buzz_bits .bit[data-buzz=video] { margin-top: 6em; }
+  #root #collective #buzz_bits .bit[data-buzz=photo] { margin-top: 9em; }
+  #root #collective #buzz_bits .bit[data-buzz=social] { margin-top: 14em; }
 
 /* Who */
 #root #who .inside {
