@@ -326,7 +326,7 @@
 
         <a name="projects"></a>
         <div id="projects" class="main grid_12 alpha omega">
-          <h2>Personal Projects</h2>
+          <h2>Community Work</h2>
 
           <p class="nopad justify">
             You may have already picked up on this, but we're very passionate about our work and we're also very multi-dimensional. We spend a lot of our spare time building tools to make tasks easier for ourselves and those like us. In addition, we spend a lot of time just being creative and sharing that creativity with others. One could say we're interested in art for art's sake; the process, the product, and the effects. We firmly believe in giving back to our respective communities through direct participation.
@@ -336,29 +336,92 @@
             <div class="grid_6 alpha">
               <h3>Open Source &amp; Technology</h3>
               <ul>
-                <li>Riot: ruby testing framework</li>
-                <li>Why Validations Suck in '96</li>
-                <li>Simpleton: sensible application deployment</li>
-                <li>Smurf: Thoughtless asset minification for Ruby on Rails</li>
-                <li data-bio="jubilator" class="selected">Jubilator</li>
-                <li>...</li>
+                <li data-project="riot">Riot</li>
+                <li data-project="smurf">Smurf</li>
+                <li data-project="wvsi96">Why Validations Suck in '96</li>
+                <li data-project="simpleton">Simpleton</li>
+                <li class="selected" data-project="jubilator">Jubilator</li>
               </ul>
             </div>
 
             <div class="grid_6 omega">
               <h3>Media &amp; Society</h3>
               <ul>
-                <li>Ritual: a short film ...</li>
-                <li>Elgin Cultural Arts Commission</li>
-                <li>Ack &amp; Nak</li>
-                <li>Honors Breakfast Club - non-traveling improv group</li>
-                <li>...</li>
+                <li data-project="ritual">Ritual</li>
+                <li data-project="elginart">Elgin Cultural Arts Commission</li>
+                <li data-project="acknak">Ack &amp; Nak</li>
+                <li data-project="hbc">Honors Breakfast Club</li>
               </ul>
             </div>
           </div>
 
           <div class="clearfix" id="project_details">
-            <div data-bio="jubilator" class="project clearfix round">
+            <div data-project="riot" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/riot.png" width="150" height="150" alt="Riot" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Riot - Protest the slow test</h4>
+                <div>An extremely fast-running, expressive, and context-driven unit testing framework</div>
+                <p>
+                  Gus wrote Riot as a replacement for Shoulda, Test::Unit, and RSpec; a few of the more 
+                  popular ruby, unit testing frameworks. Why? Because he wanted a testing framework that was 
+                  faster than the others, more expressive than the others, and was tailored to fit his 
+                  slightly different testing style. Riot has been given support for Rack-based app, Mongoid, 
+                  and ActiveRecord testing. Riot has even been ported to
+                  <a href="http://github.com/alexyoung/riotjs">JavaScript</a>.
+                </p>
+                <a href="http://github.com/thumblemonks/riot" title="Riot source code">Source code</a>
+              </div>
+            </div> <!-- riot -->
+
+            <div data-project="wvsi96" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/wvsi96.png" width="150" height="150" alt="Why Validations Suck in 96" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Why Validations Suck in '96</h4>
+                <div>An alternative implementation for object validations</div>
+                <a href="http://github.com/thumblemonks/whyvalidationssuckin96" title="Why Validations Suck in 96 source code">Source code</a>
+              </div>
+            </div> <!-- wvsi96 -->
+
+            <div data-project="smurf" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/smurf.png" width="150" height="150" alt="Smurf" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Smurf</h4>
+                <div>Thoughtless asset minification for Ruby on Rails</div>
+                <p>
+                  Smurf is a Rails plugin that does Javascript and CSS minification the way you would expect.
+                  Basically, you hook it up and it does the work. The impetus for this project revolves
+                  around laziness; a term Gus likes to refer to as automation. Instead of doing extra work to
+                  make file CSS and JavaScript fils sizes smaller, Gus wanted the Rails application to do the
+                  work for him.
+                </p>
+                <a href="http://github.com/thumblemonks/smurf" title="Smurf source code">Source code</a>
+              </div>
+            </div> <!-- smurf -->
+
+            <div data-project="simpleton" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/simpleton.png" width="150" height="150" alt="Simpleton" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Simpleton</h4>
+                <div>Sensible application deployment</div>
+                <p>
+                </p>
+                <a href="http://github.com/vandrijevik/simpleton" title="Simpleton source code">Source code</a>
+              </div>
+            </div> <!-- simpleton -->
+
+            <div data-project="jubilator" class="project clearfix round">
               <div class="grid_3 alpha">
                 <img src="/images/projects/jubilator.png" width="150" height="150" alt="Jubilator" />
               </div>
@@ -366,9 +429,74 @@
               <div class="grid_9 omega">
                 <h4>Jubilator</h4>
                 <div>Browse github repositories in style</div>
-                <a href="http://thumblemonks.github.com/" title="Jubilator">Visit project</a>
+                <a href="http://jubilator.thumblemonks.com/" title="Jubilator">Visit the site</a> /
+                <a href="http://github.com/thumblemonks/jubilator" title="Jubilator source code">Source code</a>
               </div>
-            </div>
+            </div> <!-- jubilator -->
+
+            <div data-project="ritual" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/ritual.png" width="150" height="150" alt="Ritual" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Ritual</h4>
+                <div>A short film about music ...</div>
+                <p>
+                  ...
+                </p>
+              </div>
+            </div> <!-- ritual -->
+
+            <div data-project="elginart" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/elginart.png" width="150" height="150" alt="Elgin Cultural Arts Commission" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Elgin Cultural Arts Commission</h4>
+                <div>Something something</div>
+                <p>
+                  Carl has devoted a portion of his time to betterment of cultural arts in his hometown of
+                  Elgin, IL. ...
+                </p>
+                <a href="http://www.cityofelgin.org/index.aspx?NID=539" title="Elgin Cultural Arts Commission">Visit the site</a>
+              </div>
+            </div> <!-- elginart -->
+
+            <div data-project="acknak" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/acknak.png" width="150" height="150" alt="Ack &amp; Nak" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Ack &amp; Nak</h4>
+                <div>New web comics, ad nauseam</div>
+
+                <p>
+                Ack &amp; Nak is a web comic of satire, that focuses on programming, disdain for corporate
+                life, something about spiritual life, life in general, life in specific, unlife, low life,
+                pre-life, and half-life. Cooked up and managed by Carl and Gus in their spare, spare time :)
+                </p>
+
+                <a href="http://ackandnak.com/" title="Ack &amp; Nak">Visit the site</a>
+              </div>
+            </div> <!-- acknak -->
+
+            <div data-project="hbc" class="project clearfix round" style="display: none">
+              <div class="grid_3 alpha">
+                <img src="/images/projects/hbc.png" width="150" height="150" alt="Honors Breakfast Club" />
+              </div>
+
+              <div class="grid_9 omega">
+                <h4>Honors Breakfast Club</h4>
+                <div>A Chicago improv group</div>
+                <p>
+                  Dan is one funny dude. He's something something at IO ...
+                </p>
+              </div>
+            </div> <!-- hbc -->
+
           </div>
 
         </div> <!-- #projects -->

@@ -6,6 +6,17 @@
       that.children(randomizable).remove().sort(randomly).each(function() { that.append(this); });
     });
   }
+
+  $.fn.detail_toggle = function(scope, classifier) {
+    $(this).click(function() {
+      $(scope + " li.selected").removeClass("selected");
+      $(scope + " ." + classifier).hide();
+
+      $(this).addClass("selected");
+      var commando = "data-" + classifier;
+      $(scope + " ." + classifier + "[" + commando + "=" + $(this).attr(commando) + "]").show();
+    });
+  }
 })(jQuery);
 
 $(document).ready(function() {
@@ -22,13 +33,7 @@ $(document).ready(function() {
     }
   );
 
-  $("#who ul").randomize("li");
-  
-  $("#who li").click(function() {
-    $("#who li.selected").removeClass("selected");
-    $("#who .bio").hide();
-
-    $(this).addClass("selected");
-    $("#who .bio[data-bio=" + $(this).attr("data-bio") + "]").show();
-  });
+  $("#who ul").randomize("li");  
+  $("#who li").detail_toggle("#who", "bio");
+  $("#projects li").detail_toggle("#projects", "project");
 });
